@@ -1,0 +1,47 @@
+<!--
+
+    추가 사항
+    ---------------------------------------------------------------------
+    - 정답 맞췄을 때 단어 바뀌는 애니메이션 추가
+    - 틀렸을 때 영단어 흔들린 후 랜덤으로 다시 가져오는 애니메이션 추가
+    - 정답률 소수점 떼고 계산하기
+    - 로그인 기능 제작 이 후 개인마다 맞춘 단어 수, 틀린 단어 수, 정답률 기록
+    - DB를 이용해서 단어 저장하기
+    - 오답시 틀린 단어 DB에 따로 저장 이후 오답노트 기능 제작
+    - 리액트로 추후 소스코드 수정하기
+    - CSS 공부 후 더 보기 좋은 디자인 만들기
+    - GitHub 강의 들은 뒤 깃허브에 프로젝트 올리고 계속적인 수정 진행
+    - 실제 서비스로 배포 해보기
+    ---------------------------------------------------------------------
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>영단어 암기 사이트</title>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="score">
+            <span id="correct">맞은 개수 : 0</span>
+            <span id="wrong">틀린 개수 : 0</span>
+            <span id="coratio">정답률 : 0 %</span>
+        </div>
+    
+        <div id="eng"></div>
+    </div>
+
+    <div id="kor">
+        <input type="text">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
